@@ -5,6 +5,7 @@ export class AuthController {
   @Post('register')
   register() {
     return {
+      
       message: 'User register successfully',
     };
   }
