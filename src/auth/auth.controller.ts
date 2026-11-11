@@ -3,11 +3,11 @@ import { AuthService } from './auth.service';
 
 @Controller('auth')
 export class AuthController {
-  authService: AuthService;
-  constructor(authService: AuthService) {
-    this.authService = authService;
-  }
-
+  // authService: AuthService;
+  // constructor(authService: AuthService) {
+  //   this.authService = authService;
+  // }
+  constructor(private readonly authService: AuthService) {}
   @Post('register')
   register() {
     const result = this.authService.registerUser();
